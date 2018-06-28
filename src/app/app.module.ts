@@ -12,6 +12,7 @@ import { EventsComponent } from './events/events.component';
 import { StartComponent } from './start/start.component';
 import { ContactComponent } from './contact/contact.component';
 import { ResourcesComponent } from './resources/resources.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ResourcesComponent } from './resources/resources.component';
     EventsComponent,
     StartComponent,
     ContactComponent,
-    ResourcesComponent
+    ResourcesComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
