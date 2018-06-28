@@ -1,30 +1,30 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a routerLink="/home"  class="navbar-brand" >Home</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" (click)="toggleNavbar = !toggleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
+  <div class="collapse navbar-collapse" [ngbCollapse]="!toggleNavbar">
+    <ul class="navbar-nav" mr-auto>
+      <li class="nav-item" (click)="toggleNavbar = false">
         <a routerLink="/about" class="nav-link">About</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" (click)="toggleNavbar = false">
         <a routerLink="/members" class="nav-link">Members</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" (click)="toggleNavbar = false">
         <a routerLink="/projects" class="nav-link">Projects</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" (click)="toggleNavbar = false">
         <a routerLink="/events" class="nav-link">Events</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" (click)="toggleNavbar = false">
         <a routerLink="/resources" class="nav-link">Resources</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" (click)="toggleNavbar = false">
         <a routerLink="/start" class="nav-link">Where to Start</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" (click)="toggleNavbar = false">
         <a routerLink="/contact" class="nav-link">Contact</a>
       </li>
     </ul>
