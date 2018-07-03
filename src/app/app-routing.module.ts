@@ -9,6 +9,7 @@ import { EventsComponent } from './events/events.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { StartComponent } from './start/start.component';
 import { ContactComponent } from './contact/contact.component';
+import { ListerComponent } from './lister/lister.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: 'events', component: EventsComponent},
   { path: 'resources', component: ResourcesComponent},
   { path: 'start', component: StartComponent},
-  { path: 'contact', component: ContactComponent}
+  { path: 'contact', component: ContactComponent},
+  { path: 'lister', component:ListerComponent}
 ];
 
 @NgModule({

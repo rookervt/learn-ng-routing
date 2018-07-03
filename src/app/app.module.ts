@@ -13,6 +13,7 @@ import { StartComponent } from './start/start.component';
 import { ContactComponent } from './contact/contact.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ListerComponent } from './lister/lister.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     StartComponent,
     ContactComponent,
     ResourcesComponent,
-    NavbarComponent
+    NavbarComponent,
+    ListerComponent
   ],
   imports: [
     BrowserModule,
