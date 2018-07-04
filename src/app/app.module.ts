@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -14,6 +15,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ListerComponent } from './lister/lister.component';
+import { BarebonesComponent } from './barebones/barebones.component';
 
 @NgModule({
   declarations: [
@@ -27,12 +29,14 @@ import { ListerComponent } from './lister/lister.component';
     ContactComponent,
     ResourcesComponent,
     NavbarComponent,
-    ListerComponent
+    ListerComponent,
+    BarebonesComponent
   ],
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
