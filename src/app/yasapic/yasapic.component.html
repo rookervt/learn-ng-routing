@@ -1,0 +1,22 @@
+
+<h1>Sample Posts</h1>
+
+<div>
+  <table  class="table table-sm table-bordered table-striped">
+    <thead class="thead-dark">
+      <tr>
+          <th>userId</th>
+          <th>id</th>
+          <th>title</th>
+          <th>body</th>
+      </tr>
+    </thead>
+    <tr *ngFor="let post of samplePosts">
+        <td> {{ post.userId }} </td>
+        <td> {{ post.id }} </td>
+        <td> {{ post.title }} </td>
+        <td> {{ post.body }} </td>
+    </tr>
+  </table>
+
+</div>
